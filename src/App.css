@@ -1,0 +1,245 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 150vh;
+  min-width: 240vh;
+  max-width: 400vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #071952, #088395 48%, #F2F7A1);
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #060606;
+  font-size: 1.2rem;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.MainTitle {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  
+}
+
+.OriginDB {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: -400px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+
+}
+
+.DestinyDB {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+
+.TablesBDOrigin {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  /*expand the box*/
+  height: 700px;
+  width: 800px;
+  margin: 0.30rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  
+  
+}
+
+.labelDBorgin1{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-weight: bold;
+  font-size: large;
+}
+.labelDBorgin2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+
+}
+
+.buttonSinReplicar{
+  position: absolute;
+  top: 200px;
+  right: 350px;
+}
+
+.labelDBorgin3{
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.labelDBorgin4{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  position: relative;
+  top: -55px;
+  left: 250px;
+}
+
+.buttonReplicar{
+  position: absolute;
+  top: 400px;
+  right: 350px;
+}
+
+.buttonSave{
+  position: absolute;
+  top: 600px;
+  right: 500px;
+}
+
+.buttonCancel{
+  position: absolute;
+  top: 600px;
+  right: 180px;
+}
+
+.buttonDisconnect{
+  position: absolute;
+  top: 300px;
+  right: 110px;
+}
+
+.buttonRefresh{
+  position: absolute;
+  top: 400px;
+  right: 181px;
+}
+
+.buttonDisconnectDestiny{
+  position: absolute;
+  top: 200px;
+  right: 110px;
+}
+
+.tableDBorigin{
+  
+  /*expand the box*/
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 30px;
+  border-collapse: collapse
+
+}
+
+.tableDBorigin td {
+  border: 1px solid white; /* Añade un borde de 1px a todas las celdas */
+  padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
+  border-radius: 10px;
+}
+.divTable {
+  position: absolute;
+  top: 200px;
+  right: 450px;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 320px;
+}
+.tableDBDestiny{
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 30px;
+  border-collapse: collapse
+}
+
+.tableDBDestiny td{
+  border: 1px solid white; /* Añade un borde de 1px a todas las celdas */
+  padding: 8px; /* Agrega espacio interno para mejorar la apariencia */
+  border-radius: 10px;
+}
+.divTable2{
+
+  position: absolute;
+  top: 200px;
+  right: 6px;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 320px;
+
+}
+
+.labelDBDestiny{
+  position: absolute;
+  top: 100px;
+  left: 600px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.tableDBorigin tbody tr.selected {
+  background-color: lightblue; 
+}
+
+.tableDBDestiny tbody tr.selected{
+  background-color: lightblue;
+}
